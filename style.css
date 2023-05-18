@@ -1,0 +1,120 @@
+body{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+h1{
+    color:darkcyan;
+}
+h2,#editparainfo, #nothingToShow{
+    margin-left: 70px;
+
+}
+hr{
+    margin-left: 70px;
+}
+.notes{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* align-items:center; */
+    gap: 10px;
+    border: 2px solid black;
+    width: 80%;
+    background-color: black;
+    border-radius: 5px;
+}
+input , textarea{
+    box-sizing: border-box;
+    width: 90%;
+    margin-left: 30px;
+}
+input{
+    margin-top: 20px;
+    height: 30px;
+}
+textarea{
+    height: 50px;
+}
+#creatnote{
+    height: 25px;
+    width: 70px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 2px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.display{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 70px;
+}
+.box{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 15%;
+    padding: 10px;
+    /* border: 2px solid black; */
+    border-radius: 3px;
+    box-shadow:  #a5a6a7 2px 2px 10px 5px;
+    /* justify-content: space-around; */
+    background-color: #3f4041;
+    color: white;
+}
+.content{
+    height: 50vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    /* gap: 2px; */
+    padding: 5px;
+    margin-bottom: 3px;
+}
+.buttons{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;   
+}
+.Delete-btn{
+    height: 30px;
+    width: 90px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+}
+.Edit-btn{
+    height: 30px;
+    width: 90px;
+    border: none;
+    color: white;
+    background-color:rgb(70, 205, 70);
+    border-radius: 3px;
+}
+.Edit-btn:hover,.Delete-btn:hover,#creatnote:hover{
+    cursor: pointer;
+    box-shadow: #6a6b6d 1px 1px 5px 1px;  
+}
+#date{
+    align-self: self-end;
+}
+
+@media screen and (max-width:740px){
+    .container,.notes,.title,.user-note{
+        display: flex;
+        width: 70%;
+    }
+
+}
